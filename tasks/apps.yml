@@ -6,12 +6,18 @@
     - 1password
     - android-sdk
     - android-studio
+    - alfred
     - docker
     - figma
     - google-chrome
     - google-cloud-sdk
     - iterm2
+    - licecap
     - ngrok
     - slack
     - raindropio
+    - spectacle
+    - thefuck
+    - whatsapp
+    - brave-browser
   tags: apps
