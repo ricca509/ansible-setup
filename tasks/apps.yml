@@ -1,0 +1,16 @@
+- name: Install core apps via brew casks
+  community.general.homebrew_cask:
+    name: "{{ item }}"
+  ignore_errors: yes
+  with_items:
+    - 1password
+    - android-sdk
+    - android-studio
+    - docker
+    - figma
+    - google-chrome
+    - google-cloud-sdk
+    - iterm2
+    - ngrok
+    - slack
+  tags: apps

@@ -1,0 +1,46 @@
+- name: Install homebrew
+  include_role:
+    name: geerlingguy.mac.homebrew
+  tags: core
+
+- name: Make sure homebrew bin is in path
+  ansible.builtin.lineinfile:
+    path: /etc/paths
+    state: present
+    line: '/opt/homebrew/bin'
+  become: true
+  become_user: root
+  tags: core
+
+- name: 'add custom homebrew repos'
+  community.general.homebrew_tap:
+    name: [
+      homebrew/cask-versions,
+      thoughtbot/formulae,
+      weaveworks/tap,
+    ]
+  tags: core
+
+- name: "Install homebrew packages"
+  community.general.homebrew:
+    name: [
+      'autoconf',
+      'automake',
+      'coreutils',
+      'curl',
+      'fzf',
+      'gpg',
+      'htop',
+      'kubectx',
+      'kubernetes-cli',
+      'kubernetes-helm',
+      'openssl',
+      'tmux',
+      'unzip',
+      'vim',
+      'neovim',
+      'zlib',
+    ]
+    state: present
+    update_homebrew: yes
+    tags: packages

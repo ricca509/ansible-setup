@@ -1,0 +1,5 @@
+- name: "Install from Mac app store"
+  shell: mas install {{ item }}
+  with_items:
+    - 497799835 # xcode
+  tags: xcode
