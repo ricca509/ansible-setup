@@ -43,4 +43,4 @@
     ]
     state: present
     update_homebrew: yes
-    tags: packages
+    tags: core

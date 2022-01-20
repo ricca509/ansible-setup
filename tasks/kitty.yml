@@ -1,0 +1,10 @@
+- name: Install Kitty
+  become: true
+  shell: curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
+  tags: kitty
+
+- name: Link the bin
+  ansible.builtin.file:
+    src: /Applications/kitty.app
+    dest: $HOME/.local/bin
+    state: link

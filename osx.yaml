@@ -8,4 +8,7 @@
     - include: tasks/zsh.yml        
     - include: tasks/vscode.yml        
     - include: tasks/asdf.yml    
+    - include: tasks/node.yml    
+    - include: tasks/java.yml    
+    - include: tasks/kitty.yml    
     - include: tasks/dotfiles.yml    
