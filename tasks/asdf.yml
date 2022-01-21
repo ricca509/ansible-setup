@@ -10,4 +10,5 @@
     asdf plugin-add {{ item }} || exit 0
   with_items:
     - nodejs
+    - java
   tags: asdf
