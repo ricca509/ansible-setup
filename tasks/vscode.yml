@@ -6,22 +6,6 @@
     - visual-studio-code
   tags: vscode
 
-# - name: Create a default VSCode configuration
-#   template:
-#     src: templates/vscode-settings.json.j2
-#     dest: /Users/{{ lookup('env', 'USER') }}/Library/Application Support/Code/User/settings.json
-#     owner: "{{ lookup('env', 'USER') }}"
-#     force: yes
-
-# - name: Create a default VSCode keybinding configuration
-#   template:
-#     src: templates/vscode-keybindings.json.j2
-#     dest: /Users/{{ lookup('env', 'USER') }}/Library/Application Support/Code/User/keybindings.json
-#     owner: "{{ lookup('env', 'USER') }}"
-#     force: yes
-
-# Add something which ensures path is set here
-# - name: Install VSCode extensions
-#   shell: code --install-extension {{ item }}
-#   with_items:
-#     -
+- name: Install extensions
+  shell: code install-ext
+  tags: vscode
