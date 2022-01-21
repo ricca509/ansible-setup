@@ -1,4 +1,4 @@
-- name: "Install default Java"
+- name: "Install Java"
   shell: |
     source /Users/{{ lookup('env', 'USER') }}/.asdf/asdf.sh
     asdf install java adoptopenjdk-8.0.275+1

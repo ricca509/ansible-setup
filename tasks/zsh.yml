@@ -30,7 +30,7 @@
   ansible.builtin.git:
     repo: 'https://github.com/zsh-users/zsh-autosuggestions.git'
     dest: "~/.oh-my-zsh/plugins/zsh-autosuggestions"
-  tags: zsh-auto
+  tags: zsh
 
 - name: Install zsh-syntax-highlighting
   ansible.builtin.git:
