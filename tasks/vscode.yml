@@ -1,11 +1,3 @@
-- name: Install VSCode
-  community.general.homebrew_cask:
-    name: "{{ item }}"
-  ignore_errors: yes
-  with_items:
-    - visual-studio-code
-  tags: vscode
-
 - name: Install extensions
   shell: code install-ext
   tags: vscode

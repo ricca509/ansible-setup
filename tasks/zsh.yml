@@ -1,12 +1,3 @@
-- name: "Install zsh"
-  community.general.homebrew:
-    name: [      
-      'zsh',
-    ]
-    state: present
-    update_homebrew: yes
-    tags: zsh
-
 - name: Get the path to ZSH
   become: false
   local_action: command which zsh
@@ -28,13 +19,13 @@
 
 - name: Install zsh-autosuggestions
   ansible.builtin.git:
-    repo: 'https://github.com/zsh-users/zsh-autosuggestions.git'
+    repo: "https://github.com/zsh-users/zsh-autosuggestions.git"
     dest: "~/.oh-my-zsh/plugins/zsh-autosuggestions"
   tags: zsh
 
 - name: Install zsh-syntax-highlighting
   ansible.builtin.git:
-    repo: 'https://github.com/zsh-users/zsh-syntax-highlighting.git'
+    repo: "https://github.com/zsh-users/zsh-syntax-highlighting.git"
     dest: "~/.oh-my-zsh/plugins/zsh-syntax-highlighting"
   tags: zsh
 

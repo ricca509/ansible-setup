@@ -16,7 +16,6 @@
     - slack
     - raindropio
     - spectacle
-    - thefuck
     - whatsapp
     - brave-browser
     - tidal
@@ -25,4 +24,6 @@
     - gitkraken
     - insomnia
     - nordvpn
+    - kitty
+    - visual-studio-code
   tags: apps

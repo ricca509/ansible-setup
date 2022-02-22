@@ -7,40 +7,40 @@
   ansible.builtin.lineinfile:
     path: /etc/paths
     state: present
-    line: '/opt/homebrew/bin'
+    line: "/opt/homebrew/bin"
   become: true
   become_user: root
   tags: core
 
-- name: 'add custom homebrew repos'
+- name: Add custom homebrew repos
   community.general.homebrew_tap:
-    name: [
-      homebrew/cask-versions,
-      thoughtbot/formulae,
-      weaveworks/tap,
-    ]
+    name: [homebrew/cask-versions, thoughtbot/formulae, weaveworks/tap]
   tags: core
 
-- name: "Install homebrew packages"
+- name: Install homebrew packages
   community.general.homebrew:
-    name: [
-      'autoconf',
-      'automake',
-      'coreutils',
-      'curl',
-      'fzf',
-      'gpg',
-      'htop',
-      'kubectx',
-      'kubernetes-cli',
-      'kubernetes-helm',
-      'openssl',
-      'tmux',
-      'unzip',
-      'vim',
-      'neovim',
-      'zlib',
-    ]
+    name:
+      [
+        "autoconf",
+        "automake",
+        "coreutils",
+        "curl",
+        "fzf",
+        "gpg",
+        "htop",
+        "mas",
+        "kubectx",
+        "kubernetes-cli",
+        "kubernetes-helm",
+        "openssl",
+        "thefuck",
+        "tmux",
+        "unzip",
+        "vim",
+        "neovim",
+        "zlib",
+        "zsh",
+      ]
     state: present
     update_homebrew: yes
-    tags: core
+  tags: core
