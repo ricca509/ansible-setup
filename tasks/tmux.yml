@@ -1,0 +1,9 @@
+- name: Clone Tmux Plugin Manager
+  ansible.builtin.git:
+    repo: https://github.com/tmux-plugins/tpm.git
+    dest: "{{ lookup('env', 'HOME') }}/.tmux/plugins/tpm"
+    clone: yes
+    update: yes
+  tags: tmux
+  
+    
