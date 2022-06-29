@@ -6,6 +6,8 @@ For a brand new install: `./bin/bootstrap`
 
 To re-run only ansible `./bin/run` 
 
+**Note** `bootstrap` and `run` only run the core `osx-core.yaml` playbook.
+
 ## Cloning private repositories
 
 SSH keys are stored in 1Password.

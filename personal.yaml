@@ -1,4 +1,4 @@
 ---
 - hosts: localhost
   tasks:
-    - include: tasks/personal-projects.yml
+    - import_tasks: tasks/personal-projects.yml

@@ -1,14 +1,14 @@
 ---
 - hosts: localhost
   tasks:
-    - include: tasks/core.yml
-    - include: tasks/apps.yml
-    - include: tasks/git.yml
-    - include: tasks/mac-app-store.yml
-    - include: tasks/zsh.yml
-    - include: tasks/asdf.yml
-    - include: tasks/node.yml
-    - include: tasks/java.yml
-    - include: tasks/tmux.yml
-    - include: tasks/dotfiles.yml
-    - include: tasks/vscode.yml
+    - import_tasks: tasks/core.yml
+    - import_tasks: tasks/apps.yml
+    - import_tasks: tasks/git.yml
+    - import_tasks: tasks/mac-app-store.yml
+    - import_tasks: tasks/zsh.yml
+    - import_tasks: tasks/asdf.yml
+    - import_tasks: tasks/node.yml
+    - import_tasks: tasks/java.yml
+    - import_tasks: tasks/tmux.yml
+    - import_tasks: tasks/dotfiles.yml
+    - import_tasks: tasks/vscode.yml
