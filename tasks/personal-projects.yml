@@ -1,0 +1,20 @@
+- name: Create dev folder
+  file:
+    path: "{{ lookup('env', 'HOME') }}/dev"      
+    state: directory
+  tags:
+    - personalgithub
+
+- name: Clone personal projects  
+  ansible.builtin.git:
+    repo: "git@github.com:ricca509/{{ item }}.git"
+    dest: "{{ lookup('env', 'HOME') }}/dev/{{ item }}"
+    recursive: yes
+    update: yes
+    accept_hostkey: yes
+    version: master
+  loop:    
+    - ansible-setup
+    - "ricca509.github.io"
+  tags:
+    - personalgithub

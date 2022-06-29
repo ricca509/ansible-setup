@@ -4,7 +4,7 @@
     - include: tasks/core.yml
     - include: tasks/apps.yml
     - include: tasks/git.yml
-    - include: tasks/xcode.yml
+    - include: tasks/mac-app-store.yml
     - include: tasks/zsh.yml
     - include: tasks/asdf.yml
     - include: tasks/node.yml
