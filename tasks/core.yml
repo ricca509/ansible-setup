@@ -37,6 +37,7 @@
         "tmux",
         "unzip",
         "vim",
+        "jq",
         "neovim",
         "zlib",
         "zsh",
