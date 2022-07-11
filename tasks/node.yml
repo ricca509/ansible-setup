@@ -2,8 +2,7 @@
 - name: "Install node"
   shell: |
     source /Users/{{ lookup('env', 'USER') }}/.asdf/asdf.sh
-    bash /Users/{{ lookup('env', 'USER') }}/.asdf/plugins/nodejs/bin/import-release-team-keyring
-    asdf install nodejs 14.18.3
+    bash /Users/{{ lookup('env', 'USER') }}/.asdf/plugins/nodejs/bin/import-release-team-keyring    
     asdf install nodejs 16.13.2
-    asdf global nodejs 14.18.3
+    asdf global nodejs 16.13.2
   tags: node
