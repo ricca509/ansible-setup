@@ -7,6 +7,7 @@
     - android-sdk
     - android-studio
     - alfred
+    - charles
     - docker
     - figma
     - google-chrome
@@ -18,13 +19,13 @@
     - spectacle
     - whatsapp
     - brave-browser
-    - tidal
+    - spotify
     - openvpn-connect
     - skitch
-    - gitkraken
     - insomnia
     - nordvpn
     - kitty
     - kubernetic
     - visual-studio-code
+    - zoom
   tags: apps

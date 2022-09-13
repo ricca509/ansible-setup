@@ -41,7 +41,8 @@
         "neovim",
         "zlib",
         "zsh",
-        "hashicorp/tap/vault"
+        "hashicorp/tap/vault",
+        "cocoapods"
       ]
     state: present
     update_homebrew: yes
