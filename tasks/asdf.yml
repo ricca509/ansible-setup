@@ -11,4 +11,5 @@
   with_items:
     - nodejs
     - java
+    - golang
   tags: asdf

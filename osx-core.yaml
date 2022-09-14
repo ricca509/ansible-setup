@@ -9,6 +9,7 @@
     - import_tasks: tasks/asdf.yml
     - import_tasks: tasks/node.yml
     - import_tasks: tasks/java.yml
+    - import_tasks: tasks/golang.yml
     - import_tasks: tasks/tmux.yml
     - import_tasks: tasks/dotfiles.yml
     - import_tasks: tasks/vscode.yml
