@@ -39,6 +39,7 @@
         "vim",
         "jq",
         "neovim",
+        "terraform",
         "zlib",
         "zsh",
         "hashicorp/tap/vault",

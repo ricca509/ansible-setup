@@ -1,0 +1,4 @@
+- name: "Install Terraform plugins"
+  shell: |
+    terraform -install-autocomplete
+  tags: terraform
