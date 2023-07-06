@@ -24,6 +24,7 @@
         "autoconf",
         "automake",
         "coreutils",
+        "bundletool",
         "curl",
         "fzf",
         "gpg",
@@ -43,7 +44,9 @@
         "zlib",
         "zsh",
         "hashicorp/tap/vault",
-        "cocoapods"
+        "fastlane",
+        "cocoapods",
+        "betterdisplay"
       ]
     state: present
     update_homebrew: yes
