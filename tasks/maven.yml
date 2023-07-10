@@ -1,0 +1,6 @@
+- name: "Install Maven"
+  shell: |
+    source /Users/{{ lookup('env', 'USER') }}/.asdf/asdf.sh
+    asdf install maven 3.9.3
+    asdf global maven 3.9.3
+  tags: maven

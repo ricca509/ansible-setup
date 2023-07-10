@@ -11,6 +11,7 @@
     - import_tasks: tasks/java.yml
     - import_tasks: tasks/ruby.yml
     - import_tasks: tasks/golang.yml
+    - import_tasks: tasks/maven.yml
     - import_tasks: tasks/tmux.yml
     - import_tasks: tasks/terraform.yml
     - import_tasks: tasks/dotfiles.yml
