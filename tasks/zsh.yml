@@ -29,6 +29,12 @@
     dest: "~/.oh-my-zsh/plugins/zsh-syntax-highlighting"
   tags: zsh
 
+- name: Install zsh-fzf-history-search
+  ansible.builtin.git:
+    repo: "https://github.com/joshskidmore/zsh-fzf-history-search.git"
+    dest: "~/.oh-my-zsh/plugins/zsh-fzf-history-search"
+  tags: zsh
+
 - name: Set ZSH as the default shell
   shell: chsh -s $(which zsh) {{ lookup('env', 'USER') }}
   become: true
