@@ -7,26 +7,29 @@
     - android-sdk
     - android-studio
     - alfred
-    - charles
     - docker
+    - surfshark
     - figma
     - gitify
+    - lens
+    - canva
     - google-chrome
     - google-cloud-sdk
     - licecap
     - ngrok
     - slack
     - raindropio
-    - spectacle
     - whatsapp
-    - brave-browser
-    - spotify
     - openvpn-connect
-    - skitch
+    - shottr
     - insomnia
-    - nordvpn
     - kitty
     - kubernetic
     - visual-studio-code
     - zoom
+    - webstorm
+    - intellij-idea
+    - sublime-text
+    - rectangle
+    - chatgpt
   tags: apps

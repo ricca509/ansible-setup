@@ -2,6 +2,6 @@
 - name: "Install ruby"
   shell: |
     source /Users/{{ lookup('env', 'USER') }}/.asdf/asdf.sh
-    asdf install ruby 3.1.2
-    asdf global ruby 3.1.2
+    asdf install ruby 3.4.7
+    asdf global ruby 3.4.7
   tags: ruby
